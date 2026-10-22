@@ -90,6 +90,7 @@ export function TravelSearchPanel({
         {/* Field 1: Destination */}
         <div
           ref={destRef}
+          data-testid="dest-trigger"
           className="relative w-full lg:flex-1 px-4 py-2.5 rounded-2xl lg:rounded-full hover:bg-surface-secondary/60 transition-colors cursor-pointer"
           onClick={() => {
             setIsDestOpen(!isDestOpen);
@@ -134,7 +135,7 @@ export function TravelSearchPanel({
 
           {/* Destination Dropdown */}
           {isDestOpen && (
-            <div className="absolute left-0 right-0 top-full mt-2 bg-white dark:bg-[#202824] rounded-2xl shadow-xl border border-border p-2 z-50 max-h-72 overflow-y-auto">
+            <div className="absolute left-0 right-0 top-full mt-3 bg-white dark:bg-[#202824] rounded-2xl shadow-2xl border border-border p-2 z-[100] max-h-72 overflow-y-auto">
               <div className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-content-secondary border-b border-border/50">
                 Popular Destinations
               </div>
@@ -173,6 +174,7 @@ export function TravelSearchPanel({
         {/* Field 2: Dates */}
         <div
           ref={dateRef}
+          data-testid="dates-trigger"
           className="relative w-full lg:flex-1 px-4 py-2.5 rounded-2xl lg:rounded-full hover:bg-surface-secondary/60 transition-colors cursor-pointer"
           onClick={() => {
             setIsDateOpen(!isDateOpen);
@@ -201,7 +203,7 @@ export function TravelSearchPanel({
           {/* Date Picker Popover */}
           {isDateOpen && (
             <div
-              className="absolute left-0 lg:-left-12 right-0 lg:w-80 top-full mt-2 bg-white dark:bg-[#202824] rounded-2xl shadow-xl border border-border p-4 z-50"
+              className="absolute left-0 lg:-left-12 right-0 lg:w-80 top-full mt-3 bg-white dark:bg-[#202824] rounded-2xl shadow-2xl border border-border p-4 z-[100]"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between pb-3 border-b border-border/50">
@@ -269,6 +271,7 @@ export function TravelSearchPanel({
         {/* Field 3: Guests */}
         <div
           ref={guestsRef}
+          data-testid="guests-trigger"
           className="relative w-full lg:flex-1 px-4 py-2.5 rounded-2xl lg:rounded-full hover:bg-surface-secondary/60 transition-colors cursor-pointer"
           onClick={() => {
             setIsGuestsOpen(!isGuestsOpen);
@@ -294,7 +297,7 @@ export function TravelSearchPanel({
           {/* Guest Selector Popover */}
           {isGuestsOpen && (
             <div
-              className="absolute right-0 top-full mt-2 w-72 bg-white dark:bg-[#202824] rounded-2xl shadow-xl border border-border p-4 z-50"
+              className="absolute right-0 top-full mt-3 w-72 bg-white dark:bg-[#202824] rounded-2xl shadow-2xl border border-border p-4 z-[100]"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="space-y-4">

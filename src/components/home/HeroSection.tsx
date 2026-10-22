@@ -8,9 +8,9 @@ import { TravelSearchPanel } from "./TravelSearchPanel";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-between pt-32 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Edge-to-Edge Full-Screen Background Image */}
-      <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden">
+    <section className="relative w-full min-h-screen flex flex-col justify-between pt-32 sm:pt-36 pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8 z-30 overflow-visible">
+      {/* Edge-to-Edge Full-Screen Background Image with clipping isolated here */}
+      <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden pointer-events-none">
         <Image
           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2600&q=85"
           alt="Full-screen scenic alpine road trip with majestic mountains, evergreen pines, and turquoise lake"

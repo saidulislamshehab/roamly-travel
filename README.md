@@ -12,19 +12,25 @@
 
 ---
 
-### 2. Curated Destinations Portfolio
+### 2. Elevated Search Panel & Interactive Dropdowns
+![Search Panel Guests Selector](public/images/screenshots/dropdown-guests-open.png)
+*Unclipped floating popovers featuring intelligent destination autocompletion, dynamic date picker controls, and traveler counters.*
+
+---
+
+### 3. Curated Destinations Portfolio
 ![Destinations Portfolio](public/images/screenshots/destinations.png)
 *Filterable destination catalog featuring real-time search, category pills (Coast & Culture, Tradition & Calm, Alpine Adventures), and responsive cards.*
 
 ---
 
-### 3. Thoughtfully Curated Travel Packages
+### 4. Thoughtfully Curated Travel Packages
 ![Travel Packages & Trips](public/images/screenshots/trips.png)
 *Detailed trip packages with live budget range slider, travel style filters, day-by-day itineraries, and transparent starting prices.*
 
 ---
 
-### 4. Review & Reservation Flow
+### 5. Review & Reservation Flow
 ![Booking Review](public/images/screenshots/booking.png)
 *Transparent pricing breakdown, interactive guest multipliers, lead traveler details form, and instant demo confirmation receipt.*
 
